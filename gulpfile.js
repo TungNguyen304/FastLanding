@@ -29,7 +29,6 @@ gulp.task("sass", () => {
     .pipe(sass())
     .pipe(cleanCss())
     .pipe(gulp.dest("app/css"))
-    .pipe(create().stream());
 });
 
 // webserver

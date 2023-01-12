@@ -1,17 +1,674 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.11/slick.css" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
+
 </head>
+
 <body>
     <div class="container">
+        <header>
+            <div class="wrap">
+                <div class="header__top">
+                    <div class="header__logo">
+                        <a href="#"><img src="./images/logo.png" alt=""></a>
+                    </div>
+                    <div class="header__nav">
+                        <ul>
+                            <li><a class="active" href="#">FEATURES</a></li>
+                            <li><a href="#">WORK TEAM</a></li>
+                            <li><a href="#">BLOG</a></li>
+                            <li><a href="#">FAQS</a></li>
+                            <li><a href="#">SIGN UP</a></li>
+                            <li><a href="#">LOG IN</a></li>
+                        </ul>
+                    </div>
+                    <div class="header__menu">
+                        <img src="./images/menu.png" alt="">
+                    </div>
+                </div>
+
+                <div class="header__options">
+                    <div class="header__options-left">
+                        <div class="header__option-item">
+                            <select name="" id="">
+                                <option value="Categories">Categories</option>
+                                <option value="Categories">Categories1</option>
+                                <option value="Categories">Categories2</option>
+                                <option value="Categories">Categories3</option>
+                            </select>
+                        </div>
+
+                        <div class="header__option-item">
+                            <select name="" id="">
+                                <option value="Categories">Tags</option>
+                                <option value="Categories">Tags1</option>
+                                <option value="Categories">Tags2</option>
+                                <option value="Categories">Tags3</option>
+                            </select>
+                        </div>
+
+                        <div class="header__option-item">
+                            <select name="" id="">
+                                <option value="Categories">Dates</option>
+                                <option value="Categories">Dates1</option>
+                                <option value="Categories">Dates2</option>
+                                <option value="Categories">Dates3</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="header__search">
+                        <input type="text" placeholder="Search">
+                        <img src="./images/search.png" alt="">
+                    </div>
+                </div>
+
+                <div class="header__news">
+                    <div class="header__news-list">
+                        <div class="header__news-item">
+                            <div class="header__item">
+                                <div class="header__img">
+                                    <img src="https://www.adobe.com/content/dam/cc/us/en/creativecloud/photography/discover/smartphone-photography/thumbnail.jpeg"
+                                        alt="">
+                                </div>
+                                <div class="header__content">
+                                    <h3 class="header__title">
+                                        These are the 10 most popular mobile apps in America
+                                    </h3>
+                                    <p class="header__desc">Phasellus viverra nulla ut metus varius laoreet. Quisque
+                                        rutrum.
+                                        Aenean imperdiet. Etiam ultricies nisi vel augue</p>
+                                    <p class="header__author">by: Jeff Thomson</p>
+                                </div>
+                            </div>
+                            <div class="header__item">
+                                <div class="header__img">
+                                    <img src="https://media.istockphoto.com/id/1125773979/photo/cup-of-latte-or-cappuccino-coffee-with-a-book-in-coffee-shop.jpg?b=1&s=170667a&w=0&k=20&c=9JM9eDSCic6NuP7DPhilCmmQ01iKu_CpBeYKGoLwUxA="
+                                        alt="">
+                                </div>
+                                <div class="header__content">
+                                    <h3 class="header__title">
+                                        RIAA shuts down popular YouTube to MP3 conversion site
+                                    </h3>
+                                    <p class="header__author">by: Jeff Thomson</p>
+                                </div>
+                            </div>
+                            <div class="header__item">
+                                <div class="header__img">
+                                    <img src="https://media.istockphoto.com/id/533714204/photo/businessman-checking-time-from-watch.jpg?b=1&s=170667a&w=0&k=20&c=sEAL8wMpuQKNiOFQ05OLa0SUcEbf9wB7aRmzQhz4gtA="
+                                        alt="">
+                                </div>
+                                <div class="header__content">
+                                    <h3 class="header__title">
+                                        Here's how our favorite apps have aged over the years
+                                    </h3>
+                                    <p class="header__author">by: Jeff Thomson</p>
+                                </div>
+                            </div>
+                            <div class="header__item">
+                                <div class="header__img">
+                                    <img src="https://images.squarespace-cdn.com/content/v1/5e20828aef58c221ebf4eeb8/1603549890095-98KLN569MDJ4EGF2TGRD/PetPhotography-101.jpg?format=2500w"
+                                        alt="">
+                                </div>
+                                <div class="header__content">
+                                    <h3 class="header__title">
+                                        The official D&D app is out now and you can try it for free
+                                    </h3>
+                                    <p class="header__author">by: Jeff Thomson</p>
+                                </div>
+                            </div>
+                            <div class="header__item">
+                                <div class="header__img">
+                                    <img src="https://images.squarespace-cdn.com/content/v1/56cb74368259b5d1a02060a6/1609878954849-VOVM2YYOMKGYJ66X6IZC/011_Hamptons_Architectural_Photography_Luxury_Twilight_Dusk_Pool_Interior_Design_Photographer_Will_Ellis_New_York_City.jpg?format=1000w"
+                                        alt="">
+                                </div>
+                                <div class="header__content">
+                                    <h3 class="header__title">
+                                        Monument Valley II is headed to Android at last
+                                    </h3>
+                                    <p class="header__author">by: Jeff Thomson</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__news-item">
+                            <div class="header__item">
+                                <div class="header__img">
+                                    <img src="https://www.zacandzac.co.uk/wp-content/uploads/2015/06/harriet-hughes-decor-design-lounge.jpg"
+                                        alt="">
+                                </div>
+                                <div class="header__content">
+                                    <h3 class="header__title">
+                                        These are the 10 most popular mobile apps in America
+                                    </h3>
+                                    <p class="header__desc">Phasellus viverra nulla ut metus varius laoreet. Quisque
+                                        rutrum.
+                                        Aenean imperdiet. Etiam ultricies nisi vel augue</p>
+                                    <p class="header__author">by: Jeff Thomson</p>
+                                </div>
+                            </div>
+                            <div class="header__item">
+                                <div class="header__img">
+                                    <img src="https://i.pinimg.com/736x/23/9e/47/239e473a925637c10cdf55371c733b09.jpg"
+                                        alt="">
+                                </div>
+                                <div class="header__content">
+                                    <h3 class="header__title">
+                                        RIAA shuts down popular YouTube to MP3 conversion site
+                                    </h3>
+                                    <p class="header__author">by: Jeff Thomson</p>
+                                </div>
+                            </div>
+                            <div class="header__item">
+                                <div class="header__img">
+                                    <img src="https://brindleberrypetphoto.com/wp-content/uploads/2018/03/PebKingsGrizzBLOG-1024x683.jpg"
+                                        alt="">
+                                </div>
+                                <div class="header__content">
+                                    <h3 class="header__title">
+                                        Here's how our favorite apps have aged over the years
+                                    </h3>
+                                    <p class="header__author">by: Jeff Thomson</p>
+                                </div>
+                            </div>
+                            <div class="header__item">
+                                <div class="header__img">
+                                    <img src="https://static-01.daraz.com.bd/p/1034c25cf86b6ab1b1ac747c16eadcc5.jpg"
+                                        alt="">
+                                </div>
+                                <div class="header__content">
+                                    <h3 class="header__title">
+                                        The official D&D app is out now and you can try it for free
+                                    </h3>
+                                    <p class="header__author">by: Jeff Thomson</p>
+                                </div>
+                            </div>
+                            <div class="header__item">
+                                <div class="header__img">
+                                    <img src="https://expertphotography.b-cdn.net/wp-content/uploads/2020/12/black-dogs-2.jpg"
+                                        alt="">
+                                </div>
+                                <div class="header__content">
+                                    <h3 class="header__title">
+                                        Monument Valley II is headed to Android at last
+                                    </h3>
+                                    <p class="header__author">by: Jeff Thomson</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__news-item">
+                            <div class="header__item">
+                                <div class="header__img">
+                                    <img src="https://images.ctfassets.net/3s5io6mnxfqz/6rFyhwlbJj7lGlVGQCW1l9/bd54b3b622766ba27c8cc7576654fd05/AdobeStock_246026295.jpeg"
+                                        alt="">
+                                </div>
+                                <div class="header__content">
+                                    <h3 class="header__title">
+                                        These are the 10 most popular mobile apps in America
+                                    </h3>
+                                    <p class="header__desc">Phasellus viverra nulla ut metus varius laoreet. Quisque
+                                        rutrum.
+                                        Aenean imperdiet. Etiam ultricies nisi vel augue</p>
+                                    <p class="header__author">by: Jeff Thomson</p>
+                                </div>
+                            </div>
+                            <div class="header__item">
+                                <div class="header__img">
+                                    <img src="https://images.unsplash.com/photo-1607039551379-1a633b87cdc5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d2F0Y2glMjBoYW5kfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+                                        alt="">
+                                </div>
+                                <div class="header__content">
+                                    <h3 class="header__title">
+                                        RIAA shuts down popular YouTube to MP3 conversion site
+                                    </h3>
+                                    <p class="header__author">by: Jeff Thomson</p>
+                                </div>
+                            </div>
+                            <div class="header__item">
+                                <div class="header__img">
+                                    <img src="https://img.freepik.com/premium-photo/luxurious-modern-interior-living-room-gray-sofa-white-flooring-white-wall-3d-rendering_33739-485.jpg?w=2000"
+                                        alt="">
+                                </div>
+                                <div class="header__content">
+                                    <h3 class="header__title">
+                                        Here's how our favorite apps have aged over the years
+                                    </h3>
+                                    <p class="header__author">by: Jeff Thomson</p>
+                                </div>
+                            </div>
+                            <div class="header__item">
+                                <div class="header__img">
+                                    <img src="https://img.freepik.com/free-photo/top-view-floral-bookmark-book_23-2149894345.jpg?w=2000"
+                                        alt="">
+                                </div>
+                                <div class="header__content">
+                                    <h3 class="header__title">
+                                        The official D&D app is out now and you can try it for free
+                                    </h3>
+                                    <p class="header__author">by: Jeff Thomson</p>
+                                </div>
+                            </div>
+                            <div class="header__item">
+                                <div class="header__img">
+                                    <img src="https://eavf3cou74b.exactdn.com/wp-content/uploads/2020/03/31091700/books-1.jpg?strip=all&lossy=1&ssl=1"
+                                        alt="">
+                                </div>
+                                <div class="header__content">
+                                    <h3 class="header__title">
+                                        Monument Valley II is headed to Android at last
+                                    </h3>
+                                    <p class="header__author">by: Jeff Thomson</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__news-item">
+                            <div class="header__item">
+                                <div class="header__img">
+                                    <img src="https://img.freepik.com/premium-photo/luxurious-modern-interior-living-room-gray-sofa-white-flooring-white-wall-3d-rendering_33739-485.jpg?w=2000"
+                                        alt="">
+                                </div>
+                                <div class="header__content">
+                                    <h3 class="header__title">
+                                        These are the 10 most popular mobile apps in America
+                                    </h3>
+                                    <p class="header__desc">Phasellus viverra nulla ut metus varius laoreet. Quisque
+                                        rutrum.
+                                        Aenean imperdiet. Etiam ultricies nisi vel augue</p>
+                                    <p class="header__author">by: Jeff Thomson</p>
+                                </div>
+                            </div>
+                            <div class="header__item">
+                                <div class="header__img">
+                                    <img src="https://www.makerstations.io/content/images/2022/03/lloyd-carig-desk-setup-05.jpg"
+                                        alt="">
+                                </div>
+                                <div class="header__content">
+                                    <h3 class="header__title">
+                                        RIAA shuts down popular YouTube to MP3 conversion site
+                                    </h3>
+                                    <p class="header__author">by: Jeff Thomson</p>
+                                </div>
+                            </div>
+                            <div class="header__item">
+                                <div class="header__img">
+                                    <img src="https://www.dailydogtag.com/wp-content/uploads/2018/06/Alice-G-Patterson-Photography-life-of-a-boat-dog-0041.jpg"
+                                        alt="">
+                                </div>
+                                <div class="header__content">
+                                    <h3 class="header__title">
+                                        Here's how our favorite apps have aged over the years
+                                    </h3>
+                                    <p class="header__author">by: Jeff Thomson</p>
+                                </div>
+                            </div>
+                            <div class="header__item">
+                                <div class="header__img">
+                                    <img src="https://i.pinimg.com/736x/c8/bc/d8/c8bcd82d1fb15e03b3078b33f6b654fa.jpg"
+                                        alt="">
+                                </div>
+                                <div class="header__content">
+                                    <h3 class="header__title">
+                                        The official D&D app is out now and you can try it for free
+                                    </h3>
+                                    <p class="header__author">by: Jeff Thomson</p>
+                                </div>
+                            </div>
+                            <div class="header__item">
+                                <div class="header__img">
+                                    <img src="https://images.squarespace-cdn.com/content/v1/5adde0d5d274cbf50577382c/1572452767887-NAYI5XXBWFNJ1SFWYXQJ/rosalia_interior_design_foto_8826.jpg"
+                                        alt="">
+                                </div>
+                                <div class="header__content">
+                                    <h3 class="header__title">
+                                        Monument Valley II is headed to Android at last
+                                    </h3>
+                                    <p class="header__author">by: Jeff Thomson</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="arrow__left">
+                        <img src="./images/arrow_left.png" alt="">
+                    </div>
+                    <div class="arrow__right">
+                        <img src="./images/arrow_right.png" alt="">
+                    </div> -->
+                </div>
+            </div>
+        </header>
+        <div class="wrap">
+            <div class="nav">
+                <div class="nav__logo">
+                    <a href="#"><img src="./images/logo2.png" alt=""></a>
+                </div>
+                <div class="nav__list">
+                    <ul>
+                        <li><a class="active2" href="#">FEATURES</a></li>
+                        <li><a href="#">PRICING</a></li>
+                        <li><a href="#">REVIEWS</a></li>
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                        <li><button type="button">GET IT FREE</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="option">
+            <div class="option__item">
+                <select name="" id="">
+                    <option value="Categories">Categories</option>
+                    <option value="Categories">Categories1</option>
+                    <option value="Categories">Categories2</option>
+                    <option value="Categories">Categories3</option>
+                </select>
+            </div>
+
+            <div class="option__item">
+                <select name="" id="">
+                    <option value="Categories">Tags</option>
+                    <option value="Categories">Tags1</option>
+                    <option value="Categories">Tags2</option>
+                    <option value="Categories">Tags3</option>
+                </select>
+            </div>
+
+            <div class="option__item">
+                <select name="" id="">
+                    <option value="Categories">Dates</option>
+                    <option value="Categories">Dates1</option>
+                    <option value="Categories">Dates2</option>
+                    <option value="Categories">Dates3</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="wrap">
+            <section>
+                <div class="section__wrap">
+                    <div class="section__banner">
+                        <img src="https://images.squarespace-cdn.com/content/v1/5bed4747b40b9d39affa07cf/1565971822046-BXT4KKPPF2VLVLTY1Q45/interiors-photography.jpg?format=2500w"
+                            alt="">
+                    </div>
+                    <div class="section__content">
+                        <div class="section__wrap-content">
+                            <h3 class="section__title">
+                                Google is killing off its Drive desktop app to make way for a smarter one
+                            </h3>
+                            <p class="section__desc">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                                consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore.
+                            </p>
+                            <div class="section__author">
+                                <img src="https://res.cloudinary.com/hamstech/images/f_auto,q_auto/v1646733392/Hamstech%20App/Title-Image-4_8046668324e19/Title-Image-4_8046668324e19.jpg?_i=AA"
+                                    alt="">
+                                <p class="section__name">by: Margaret Gill</p>
+                            </div>
+                            <div class="section__sub">
+                                <div class="section__sub-img">
+                                    <img src="https://www.thehouseshop.com/property-blog/wp-content/uploads/2016/07/interior-photography-by-lorenzo-pennati-14083026234nkg8.jpg"
+                                        alt="">
+                                </div>
+                                <div class="section__sub-content">
+                                    <h4 class="section__sub-title">Apple iPhone 8 event: What to expect</h4>
+                                    <p class="section__sub-desc">Ut enim ad minima veniam, quis nostrum exercitationem
+                                        ullam
+                                        corporis suscipit laboriosam.</p>
+                                    <p class="section__sub-author">by: Hotaru Hoshi</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section>
+                <div class="section__wrap">
+                    <div class="section__content">
+                        <div class="section__wrap-content">
+                            <h3 class="section__title">
+                                London Uber-rival Taxify suspends service after only three days
+                            </h3>
+                            <p class="section__desc">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                                consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore.
+                            </p>
+                            <div class="section__author">
+                                <img src="https://www.samiam.com.au/wp-content/uploads/2021/08/210422_ONE_MAGAZINE_04_0306-e1627874492399-960x619.jpg"
+                                    alt="">
+                                <p class="section__name">by: Dylan Sewell</p>
+                            </div>
+                            <div class="section__sub">
+                                <div class="section__sub-img">
+                                    <img src="https://www.mymove.com/wp-content/uploads/2018/06/GettyImages-883996044-scaled.jpg"
+                                        alt="">
+                                </div>
+                                <div class="section__sub-content">
+                                    <h4 class="section__sub-title">YouTube brings HDR playback to Android, and it looks
+                                        incredible.</h4>
+                                    <p class="section__sub-desc">Phasellus viverra nulla ut metus varius laoreet.
+                                        Quisque rutrum. Aenean imperdiet.</p>
+                                    <p class="section__sub-author">by: Margaret Gill</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section__banner">
+                        <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/peter-sandel-design-llc-portfolio-interiors-living-1501107903-9363983-1563558759.jpg"
+                            alt="">
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="section__wrap">
+                    <div class="section__banner">
+                        <img src="https://www.bemycozy.com/wp-content/uploads/2020/03/interior-mia-m-13-scaled.jpg"
+                            alt="">
+                    </div>
+                    <div class="section__content">
+                        <div class="section__wrap-content">
+                            <h3 class="section__title">
+                                IBM’s Watson AI is learning to understand nuance and context
+                            </h3>
+                            <p class="section__desc">Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.
+                                Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.
+                                Nam eget dui.</p>
+                            <div class="section__author">
+                                <img src="https://www.photoion.co.uk/wp-content/uploads/2021/11/RWG-19-800x564.jpg"
+                                    alt="">
+                                <p class="section__name">by: Hotaru Hoshi</p>
+                            </div>
+                            <div class="section__sub">
+                                <div class="section__sub-img">
+                                    <img src="https://www.viewbug.com/media/mediafiles/2014/02/23/12239221_large.jpg"
+                                        alt="">
+                                </div>
+                                <div class="section__sub-content">
+                                    <h4 class="section__sub-title">Apple's culture of secrets is why it won't win the AI
+                                        race</h4>
+                                    <p class="section__sub-desc">Phasellus viverra nulla ut metus varius laoreet.
+                                        Quisque rutrum. Aenean imperdiet.</p>
+                                    <p class="section__sub-author">by: Jeff Thomson</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="loading">
+            <p class="loading__wrap">
+                <img src="./images/load.png" alt="">
+                LOADING MORE
+            </p>
+            <div class="surf">
+                <img src="./images/arrow_top.png" alt="">
+            </div>
+        </div>
+
+        <footer>
+            <div class="wrap footer__wrap">
+                <div class="footer__left">
+                    <div class="footer__logo">
+                        <a href="#"><img src="./images/logo.png" alt=""></a>
+                    </div>
+                    <div class="footer__operating">
+                        <a href="#" class="operating__item">
+                            <div class="operating__img">
+                                <img src="./images/apple.png" alt="">
+                            </div>
+                            <div class="operating__content">
+                                <p class="operating__download">Download for</p>
+                                <p class="operating__name">Apple ios</p>
+                            </div>
+                        </a>
+
+                        <a href="#" class="operating__item">
+                            <div class="operating__img">
+                                <img src="./images/android.png" alt="">
+                            </div>
+                            <div class="operating__content">
+                                <p class="operating__download">Download for</p>
+                                <p class="operating__name">Android</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="footer__support">
+                        <p>© 2017 fastlanding, Inc.</p>
+                        <p>All Rights Reserved. Designed and Developed by CM</p>
+                    </div>
+                </div>
+
+                <div class="footer__right">
+                    <div class="footer__info">
+                        <div class="info__item">
+                            <p class="info__name">Company</p>
+                            <p class="info__name">Blog</p>
+                            <p class="info__name">Community</p>
+                            <p class="info__name">Forum</p>
+                        </div>
+                        <div class="info__item">
+                            <p class="info__name">Support</p>
+                            <p class="info__name">Privacy Policy</p>
+                            <p class="info__name">Cookie Policy</p>
+                            <p class="info__name">FAQs</p>
+                        </div>
+                    </div>
+                    <div class="footer__social">
+                        <ul>
+                            <li><a href="#">
+                                    <img src="./images/fb.png" alt="">
+                                </a></li>
+                            <li><a href="#">
+                                    <img src="./images/twitter.png" alt="">
+                                </a></li>
+                            <li><a href="#">
+                                    <img src="./images/linked.png" alt="">
+                                </a></li>
+                            <li><a href="#">
+                                    <img src="./images/github.png" alt="">
+                                </a></li>
+                            <li><a href="#">
+                                    <img src="./images/stack_overflow.png" alt="">
+                                </a></li>
+                            <li><a href="#">
+                                    <img src="./images/youtube.png" alt="">
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__support extra">
+                    <p>© 2017 fastlanding, Inc.</p>
+                    <p>All Rights Reserved. Designed and Developed by CM</p>
+                </div>
+            </div>
+        </footer>
+
+        <div class="menu__mobi">
+            <div class="wrap_menu__mobi">
+                <div class="wrap nav__list">
+                    <ul>
+                        <div> 
+                            <img src="./images/logo.png" alt="">
+                            <img src="./images/close.png" alt="">
+                        </div>
+                        <li><a class="nav__active" href="#">FEATURES</a></li>
+                        <li><a href="#">PRICING</a></li>
+                        <li><a href="#">REVIEWS</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="#">LOG IN</a></li>
+                        <li><a href="#">CHECK IN</a></li>
+                        <li><a href="#">BLOG</a></li>
+                        <li><a href="#">COMMUNITY</a></li>
+                        <li><a href="#">FORUM</a></li>
+                        <li><a href="#">TERMS OF USE</a></li>
+                        <li><a href="#">PRIVACY POLICY</a></li>
+                        <li><a href="#">COOKIE POLICY</a></li>
+                        <li><a href="#">FAQS</a></li>
+                    </ul>
+                </div>
+
+                <footer>
+                    <div class="footer__wrap">
+                        <div class="footer__right">
+                            
+                            <div class="footer__social">
+                                <ul>
+                                    <li><a href="#">
+                                            <img src="./images/fb.png" alt="">
+                                        </a></li>
+                                    <li><a href="#">
+                                            <img src="./images/twitter.png" alt="">
+                                        </a></li>
+                                    <li><a href="#">
+                                            <img src="./images/linked.png" alt="">
+                                        </a></li>
+                                    <li><a href="#">
+                                            <img src="./images/github.png" alt="">
+                                        </a></li>
+                                    <li><a href="#">
+                                            <img src="./images/stack_overflow.png" alt="">
+                                        </a></li>
+                                    <li><a href="#">
+                                            <img src="./images/youtube.png" alt="">
+                                        </a></li>
+                                </ul>
+                            </div>
+                        </div>
         
+                        <div class="footer__support extra">
+                            <p>© 2017 fastlanding, Inc.</p>
+                            <p>All Rights Reserved. Designed and Developed by CM</p>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
     </div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.3.11/slick.min.js"></script> -->
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
     <script src="./js/app.js"></script>
 </body>
+
 </html>
