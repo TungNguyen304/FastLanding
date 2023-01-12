@@ -70,6 +70,10 @@
 }
 
 @media (max-width: 1024px) {
+  .nav .nav__list ul li {
+    margin-left: 15px;
+  }
+  
   footer {
     padding: 100px 0;
     .footer__wrap {
@@ -117,9 +121,7 @@
     margin-left: 20px;
   }
 
-  .nav .nav__list ul li {
-    margin-left: 15px;
-  }
+  
 }
 
 @media (max-width: 880px) {
