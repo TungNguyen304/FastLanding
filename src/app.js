@@ -27,7 +27,7 @@ function handleShowMenuMobi() {
   const menu__mobi = document.querySelector(".menu__mobi");
   const wrap_menu__mobi = document.querySelector(".wrap_menu__mobi");
   const close = document.querySelectorAll(
-    ".wrap_menu__mobi .nav__list ul div img"
+    ".wrap_menu__mobi .mobi_top div img"
   )[1];
   if (menuIcon) {
     menuIcon.onclick = () => {
